@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    hello
+    <script>
+        var name = prompt('please enter your name');
+        var age = prompt('please enter your age');
+        var gender = prompt('please enter your gender')
+        alert('Your name is:' + name +'\n' +'Your age is:' + parseInt(age) + '\n'+ 'Your gendr is:' + gender)
+    </script>
+
+    <script>
+        // 1. average
+        var sum = 0;
+        var average = 0;
+        for (var i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        average = sum / 100;
+        console.log(average);
+
+        // 2. sum
+        var even = 0;
+        var odd = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                even = even + i;
+            } else {
+                odd = odd + i;
+            }
+        }
+        console.log(even);
+        console.log(odd);
+
+        // 3.divided by 3
+        var result = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                result = result + i;
+            }
+        }
+        console.log('The result is:' + result);
+
+        var num = prompt('please enter a number');
+        var sum = 0;
+        var average = 0;
+        for (var i = 1; i <= num; i++) {
+            var score = prompt('enter' + i + 'student');
+            sum = sum + parseFloat(score);
+        }
+        average = sum / num;
+        alert('The score is:' + sum);
+        alert('The average score is:' + average);
+
+    </script>
+</body>
+
+</html>
